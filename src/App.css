@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.myNav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(24, 10, 65);
+  align-items: center;
+  padding: 12px, 0px;
+}
+.myNav img{
+  width: 3%;
+}
+.myNav ul{
+list-style: none;
+}
+.myNav ul li {
+display: inline-block;
+padding: 0px, 12px;
+}
+.myNav ul li a {
+text-decoration: none;
+color: whitesmoke;
+font-size: 14px;
+font-weight: 700;
+padding: 10px;
+}
+.myNav button{
+  padding: 10px, 7px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: cornflowerblue;
+  /* border: 1px solid goldenrod; */
+  font-size: 18px;
+}
+.myNav button:hover{
+  /* background-color: cadetblue; */
+  color: white;
+}
