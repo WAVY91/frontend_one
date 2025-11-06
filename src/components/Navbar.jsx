@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link} from 'react-router-dom'
+import Signuserup from '../pages/Signuserup';
 
 const Navbar = () => {
   return (
@@ -10,6 +11,8 @@ const Navbar = () => {
             <li><Link to="/dashboard">Dashboard</Link></li>
             <li><Link to="/signin">Login</Link></li>
             <li><Link to="/signup">Register</Link></li>
+            <li><Link to="/signuserup">Signuserup</Link></li>
+
         </ul>
     </div>
   )
