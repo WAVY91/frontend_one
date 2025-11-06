@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard'
 import Notfound from './pages/Notfound'
 import About from './pages/About'
 import Signuserup from './pages/Signuserup'
+import Props from './pages/Props'
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
       <Route path='*' element={<Notfound/>}/>
       <Route path='/my-about' element={<About/>}/>
       <Route path='/about' element={<Navigate to='/my-about'/>}/>
+      <Route path='/props' element={<Props/>}/>
     </Routes>
    {/* <nav className='myNav'>
       <img src={myLogo} alt="" />
