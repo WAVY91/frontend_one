@@ -17,21 +17,38 @@ const Signintee = () => {
         return;
     }
 
-    axios.post("https://back-schema.onrender.com/user/signin", formData)
-        .then((res) => {
-        alert("Login successful!");
+    axios.post("http://localhost:5000/signin", { email, password })
+  .then((res) => {
+    if (res.data.success) {
 
-        // localStorage.setItem('token', res.data.token)
+      // Save user so dashboard can read it
+      localStorage.setItem("user", JSON.stringify(res.data.user));
 
-        // localStorage.setItem('user', JSON.stringify(res.data.user))
+      // Go to dashboard
+      navigate("/dashboardtee");
+    }
+  })
+  .catch((err) => {
+    console.log(err);
+    alert("Login failed");
+  });
 
-        setFormData({ email: "", password: "" });
 
-        navigate("/dashboardtee");
-        })
-        .catch((err) => {
-        alert("Invalid credentials. Try again.");
-        });
+    // axios.post("https://back-schema.onrender.com/user/signin", formData)
+    //     .then((res) => {
+    //     alert("Login successful!");
+
+    //     // localStorage.setItem('token', res.data.token)
+
+    //     // localStorage.setItem('user', JSON.stringify(res.data.user))
+
+    //     setFormData({ email: "", password: "" });
+
+    //     navigate("/dashboardtee");
+    //     })
+        // .catch((err) => {
+        // alert("Invalid credentials. Try again.");
+        // });
     };
 
     return (
