@@ -17,7 +17,7 @@ const Signintee = () => {
         return;
     }
 
-    axios.post("http://localhost:5000/signin", { email, password })
+    axios.post("https://back-schema.onrender.com/user/signin", formData)
   .then((res) => {
     if (res.data.success) {
 
