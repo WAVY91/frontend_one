@@ -31,6 +31,7 @@ const App = () => {
       <Route path='/props' element={<Props/>}/>
       <Route path='/signuptee' element={<Signuptee/>}/>
       <Route path='/signintee' element={<Signintee/>}/>
+            {/* <Route path='/dashboardtee' element={<PrivateRoute><Dashboardtee/></PrivateRoute>}/> */}
     </Routes>
    {/* <nav className='myNav'>
       <img src={myLogo} alt="" />
