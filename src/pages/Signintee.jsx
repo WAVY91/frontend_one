@@ -21,9 +21,9 @@ const Signintee = () => {
         .then((res) => {
         alert("Login successful!");
 
-        localStorage.setItem('token', res.data.token)
+        // localStorage.setItem('token', res.data.token)
 
-        localStorage.setItem('user', JSON.stringify(res.data.user))
+        // localStorage.setItem('user', JSON.stringify(res.data.user))
 
         setFormData({ email: "", password: "" });
 
