@@ -17,7 +17,7 @@ const Signintee = () => {
         return;
     }
 
-    axios.post("http://localhost:3000/user/signin", formData)
+    axios.post("https://back-schema.onrender.com/user/signin", formData)
         .then((res) => {
         alert("Login successful!");
 
