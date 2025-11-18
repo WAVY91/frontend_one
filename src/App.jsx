@@ -13,6 +13,8 @@ import Signuserup from './pages/Signuserup'
 import Props from './pages/Props'
 import Signuptee from './pages/Signuptee'
 import Signintee from './pages/Signintee'
+import PrivateRoute from './PrivateRoute'
+import Dashboardtee from './pages/Dashboardtee'
 
 
 const App = () => {
@@ -31,7 +33,7 @@ const App = () => {
       <Route path='/props' element={<Props/>}/>
       <Route path='/signuptee' element={<Signuptee/>}/>
       <Route path='/signintee' element={<Signintee/>}/>
-            {/* <Route path='/dashboardtee' element={<PrivateRoute><Dashboardtee/></PrivateRoute>}/> */}
+      <Route path='/dashboardtee' element={<PrivateRoute><Dashboardtee/></PrivateRoute>}/>
     </Routes>
    {/* <nav className='myNav'>
       <img src={myLogo} alt="" />
