@@ -11,6 +11,8 @@ import Notfound from './pages/Notfound'
 import About from './pages/About'
 import Signuserup from './pages/Signuserup'
 import Props from './pages/Props'
+import Signuptee from './pages/Signuptee'
+import Signintee from './pages/Signintee'
 
 
 const App = () => {
@@ -27,6 +29,8 @@ const App = () => {
       <Route path='/my-about' element={<About/>}/>
       <Route path='/about' element={<Navigate to='/my-about'/>}/>
       <Route path='/props' element={<Props/>}/>
+      <Route path='/signuptee' element={<Signuptee/>}/>
+      <Route path='/signintee' element={<Signintee/>}/>
     </Routes>
    {/* <nav className='myNav'>
       <img src={myLogo} alt="" />

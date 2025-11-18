@@ -12,6 +12,9 @@ const Navbar = () => {
             <li><Link to="/signin">Login</Link></li>
             <li><Link to="/signup">Register</Link></li>
             <li><Link to="/signuserup">Signuserup</Link></li>
+            <li><Link to="/signuptee">Signuptee</Link></li>
+            <li><Link to="/signintee">Signintee</Link></li>
+            <Route path='/dashboardtee' element={<ProtectedRoute><Dashboardtee/></ProtectedRoute>}/>
             <li><Link to="/props">Props</Link></li>
 
         </ul>
