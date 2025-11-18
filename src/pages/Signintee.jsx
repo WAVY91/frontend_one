@@ -46,7 +46,7 @@ const Signintee = () => {
 
         setFormData({ email: "", password: "" });
 
-        navigate("/dashboardtee");
+        navigate("/dashboard");
         })
         .catch((err) => {
         alert("Invalid credentials. Try again.");
