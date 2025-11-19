@@ -36,11 +36,12 @@ const Signintee = () => {
 
     axios.post("https://back-schema.onrender.com/user/signin", formData)
         .then((res) => {
-        alert("Login successful!");
         localStorage.setItem("user", JSON.stringify(res.data.user));
 
 
-        // localStorage.setItem('token', res.data.token)
+        localStorage.setItem('token', res.data.token)
+        alert("Login successful!");
+
 
         // localStorage.setItem('user', JSON.stringify(res.data.user))
 
