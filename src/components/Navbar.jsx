@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link} from 'react-router-dom'
 // import Signuserup from '../pages/Signuserup';
+import Formik from '../pages/Formik';
 
 const Navbar = () => {
   return (
@@ -16,6 +17,7 @@ const Navbar = () => {
             <li><Link to="/signuptee">Signuptee</Link></li>
             <li><Link to="/signintee">Signintee</Link></li>
             <li><Link to="/props">Props</Link></li>
+            <li><Link to="/formik">Formik</Link></li>
 
         </ul>
     </div>
