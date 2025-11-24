@@ -15,6 +15,7 @@ import Signuptee from './pages/Signuptee'
 import Signintee from './pages/Signintee'
 import PrivateRoute from './PrivateRoute'
 import Dashboardtee from './pages/Dashboardtee'
+import Formik from './pages/Formik'
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
       <Route path='/signin' element={<Signin/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='*' element={<Notfound/>}/>
+      <Route path='/formik' element={<Formik/>}/>
       <Route path='/my-about' element={<About/>}/>
       <Route path='/about' element={<Navigate to='/my-about'/>}/>
       <Route path='/props' element={<Props/>}/>
