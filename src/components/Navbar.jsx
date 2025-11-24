@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link} from 'react-router-dom'
 // import Signuserup from '../pages/Signuserup';
-import Formik from '../pages/Formik';
+// import Formik from '../pages/Formik';
 
 const Navbar = () => {
   return (
